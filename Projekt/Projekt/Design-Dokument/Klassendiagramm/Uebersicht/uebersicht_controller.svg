@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="597.774px" height="315.885px" viewBox="0 0 597.774 315.885" enable-background="new 0 0 597.774 315.885"
+	 xml:space="preserve">
+<rect x="66.08" y="41.471" fill="#F0F0F0" stroke="#000000" stroke-miterlimit="10" width="481.881" height="251.958"/>
+<rect x="256.349" y="83.059" fill="#E1E1E1" stroke="#000000" stroke-miterlimit="10" width="272.064" height="188.423"/>
+<rect x="83.478" y="72.731" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="152.46" height="29.897"/>
+<rect x="83.478" y="157.699" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="145.689" height="113.511"/>
+<g>
+	<line fill="#FFFFFF" x1="156.322" y1="158.204" x2="156.322" y2="103.134"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="156.322" y1="158.204" x2="156.322" y2="110.31"/>
+		<g>
+			<polygon points="161.28,111.769 156.294,103.134 151.308,111.769 			"/>
+		</g>
+	</g>
+</g>
+<rect x="72.603" y="47.994" fill="none" width="127.21" height="19.571"/>
+<text transform="matrix(1 0 0 1 72.6035 56.3315)" font-family="'MyriadPro-Regular'" font-size="11.7424">controller</text>
+<rect x="256.134" y="69.795" fill="#E1E1E1" stroke="#000000" stroke-miterlimit="10" width="100.498" height="13.156"/>
+<rect x="66.08" y="28.315" fill="#F0F0F0" stroke="#000000" stroke-miterlimit="10" width="100.498" height="13.155"/>
+<rect x="64.995" y="81.646" fill="none" width="192.445" height="22.288"/>
+<text transform="matrix(1 0 0 1 115.7832 92.7622)" font-family="'MyriadPro-Regular'" font-size="15.6566">SubController</text>
+<rect x="93.263" y="170.364" fill="none" width="135.904" height="106.552"/>
+<text transform="matrix(1 0 0 1 93.2632 181.4814)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="15.6566">GUIController</tspan><tspan x="0" y="18.787" font-family="'MyriadPro-Regular'" font-size="15.6566">DialogueController</tspan><tspan x="0" y="37.575" font-family="'MyriadPro-Regular'" font-size="15.6566">MenuController</tspan><tspan x="0" y="56.363" font-family="'MyriadPro-Regular'" font-size="15.6566">ToolBarController</tspan><tspan x="0" y="75.15" font-family="'MyriadPro-Regular'" font-size="15.6566">WorldController</tspan></text>
+<rect x="338.8" y="113.012" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="89.1" height="33.488"/>
+<rect x="347.569" y="122.254" fill="none" width="220.713" height="18.484"/>
+<text transform="matrix(1 0 0 1 347.5693 133.3706)" font-family="'MyriadPro-Regular'" font-size="15.6566">Simulation</text>
+<rect x="279.852" y="188.688" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="229.413" height="72.573"/>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="381.633" y1="153.676" x2="381.633" y2="188.688"/>
+		<g>
+			<polygon points="376.675,155.135 381.66,146.5 386.646,155.135 			"/>
+		</g>
+	</g>
+</g>
+<rect x="263.961" y="86.972" fill="none" width="127.209" height="19.571"/>
+<text transform="matrix(1 0 0 1 263.9619 95.3096)" font-family="'MyriadPro-Regular'" font-size="11.7424">controller.simulation</text>
+<rect x="289.221" y="199.721" fill="none" width="217.448" height="71.76"/>
+<text transform="matrix(1 0 0 1 289.2212 210.8369)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="15.6566">SimulationController</tspan><tspan x="0" y="18.788" font-family="'MyriadPro-Regular'" font-size="15.6566">TrafficLightSimulationController</tspan><tspan x="0" y="37.575" font-family="'MyriadPro-Regular'" font-size="15.6566">VehicleSimulationController</tspan></text>
+<polygon fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="381.762,146.5 376.238,155.582 387.027,155.582 "/>
+<polygon fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="156.451,102.393 150.927,111.474 161.716,111.474 "/>
+</svg>

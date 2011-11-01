@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 
+	ANT build file 
+
+	@author Markus Tacker <m@tacker.org>
+	@version $Id: build.xml 214 2011-01-16 11:46:29Z mtack001 $
+-->
+<project default="javadoc" basedir=".">
+    <target name="javadoc" description="Erzeugt JavaDoc fuer den Verkehrsplaner">
+	<mkdir dir="${basedir}/doc" />
+        <javadoc 
+		encoding="utf-8"
+		charset="utf-8"
+		docencoding="utf-8"
+		access="private" 
+		author="true" 
+		classpath="resource/lib/log4j-1.2.16.jar;resource/lib/junit-4.8.2.jar;resource/lib/batik/batik-anim.jar;resource/lib/batik/batik-awt-util.jar;resource/lib/batik/batik-bridge.jar;resource/lib/batik/batik-codec.jar;resource/lib/batik/batik-css.jar;resource/lib/batik/batik-dom.jar;resource/lib/batik/batik-ext.jar;resource/lib/batik/batik-extension.jar;resource/lib/batik/batik-gui-util.jar;resource/lib/batik/batik-gvt.jar;resource/lib/batik/batik-parser.jar;resource/lib/batik/batik-script.jar;resource/lib/batik/batik-svg-dom.jar;resource/lib/batik/batik-svggen.jar;resource/lib/batik/batik-swing.jar;resource/lib/batik/batik-transcoder.jar;resource/lib/batik/batik-util.jar;resource/lib/batik/batik-xml.jar;resource/lib/batik/xml-apis-ext.jar"
+		destdir="${basedir}/doc" 
+		doctitle="Verkehrsplaner 2010swt03" 
+		nodeprecated="false" 
+		nodeprecatedlist="false" 
+		noindex="false" 
+		nonavbar="false" 
+		notree="false" 
+		source="1.6" 
+		splitindex="true" 
+		use="true" 
+		version="true">
+		<fileset dir="${basedir}/" includes="**/*.java"/>
+        <tag name="todo" description="To do: " />
+	</javadoc>
+    </target>
+</project>

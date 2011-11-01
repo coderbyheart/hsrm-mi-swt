@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.279px" height="841.89px" viewBox="0 0 595.279 841.89" enable-background="new 0 0 595.279 841.89"
+	 xml:space="preserve">
+<g>
+	<g>
+		<circle fill="#FFFFFF" stroke="#010101" stroke-width="2" stroke-miterlimit="10" cx="77.176" cy="240.11" r="21.193"/>
+		<line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="77" y1="261" x2="77" y2="354"/>
+		<line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="48" y1="287" x2="107" y2="287"/>
+		<line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="77.287" y1="354.329" x2="48.243" y2="383.373"/>
+		<line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="77.287" y1="354.329" x2="104.749" y2="381.79"/>
+	</g>
+	<rect x="30.354" y="409.958" fill="none" width="93.75" height="19.793"/>
+	<text transform="matrix(1 0 0 1 47.7761 424.2769)" fill="#010101" font-family="'ArialMT'" font-size="20">Nutzer</text>
+</g>
+<rect x="191.499" y="33.848" fill="#FFFFFF" stroke="#010101" stroke-width="2" stroke-miterlimit="10" width="305.505" height="542.618"/>
+<g>
+	<rect x="257.005" y="111.998" fill="none" width="101.247" height="30"/>
+	<text transform="matrix(1 0 0 1 274.9553 122.021)" fill="#010101" font-family="'ArialMT'" font-size="14">Programm </text>
+	<text transform="matrix(1 0 0 1 280.3762 138.8198)" fill="#010101" font-family="'ArialMT'" font-size="14">beenden</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="308.252" cy="126.998" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="307.629" y="171.998" fill="none" width="101.244" height="30"/>
+	<text transform="matrix(1 0 0 1 325.571 182.021)" fill="#010101" font-family="'ArialMT'" font-size="14">Neue Welt </text>
+	<text transform="matrix(1 0 0 1 333.3386 198.8198)" fill="#010101" font-family="'ArialMT'" font-size="14">anlegen</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="358.873" cy="186.998" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="329.006" y="248.414" fill="none" width="101.246" height="15"/>
+	<text transform="matrix(1 0 0 1 346.5564 258.437)" fill="#010101" font-family="'ArialMT'" font-size="14">Welt laden</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="380.252" cy="254.414" rx="50" ry="30"/>
+</g>
+<rect x="330.252" y="308.409" fill="none" width="101.244" height="30"/>
+<text transform="matrix(1 0 0 1 366.8748 318.4331)" fill="#010101" font-family="'ArialMT'" font-size="14">Welt </text>
+<text transform="matrix(1 0 0 1 350.5222 335.2319)" fill="#010101" font-family="'ArialMT'" font-size="14">speichern</text>
+<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="381.496" cy="323.409" rx="50" ry="30"/>
+<g>
+	<rect x="329.006" y="376.997" fill="none" width="101.246" height="30"/>
+	<text transform="matrix(1 0 0 1 346.9451 387.021)" fill="#010101" font-family="'ArialMT'" font-size="14">Simulation </text>
+	<text transform="matrix(1 0 0 1 358.2283 403.8198)" fill="#010101" font-family="'ArialMT'" font-size="14">starten</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="380.252" cy="391.997" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="307.629" y="446.191" fill="none" width="101.244" height="30"/>
+	<text transform="matrix(1 0 0 1 325.5671 456.2144)" fill="#010101" font-family="'ArialMT'" font-size="14">Simulation </text>
+	<text transform="matrix(1 0 0 1 333.3406 473.0132)" fill="#010101" font-family="'ArialMT'" font-size="14">stoppen</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="358.873" cy="461.191" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="258.251" y="506.671" fill="none" width="101.245" height="30"/>
+	<text transform="matrix(1 0 0 1 274.6331 516.6948)" fill="#010101" font-family="'ArialMT'" font-size="14">Hilfe/About </text>
+	<text transform="matrix(1 0 0 1 283.1877 533.4937)" fill="#010101" font-family="'ArialMT'" font-size="14">aufrufen</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="309.496" cy="521.671" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="202.75" y="47.467" fill="none" width="240.001" height="17.5"/>
+	<text transform="matrix(1 0 0 1 202.7502 57.4888)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Verkehrsplaner </text>
+	<text transform="matrix(1 0 0 1 308.5837 57.4888)" fill="#010101" font-family="'ArialMT'" font-size="14">- Menüfunktionen</text>
+</g>
+<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="107" y1="287" x2="258.251" y2="126.998"/>
+<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="107" y1="287" x2="308.873" y2="186.998"/>
+<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="107" y1="287" x2="330.252" y2="254.414"/>
+<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="107" y1="287" x2="331.496" y2="323.409"/>
+<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="107" y1="287" x2="330.252" y2="391.997"/>
+<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="107" y1="287" x2="308.873" y2="461.191"/>
+<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="107" y1="287" x2="259.497" y2="521.671"/>
+<g>
+	<g>
+		<polyline fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="5,5" points="435.51,391.997 477.806,391.998 
+			477.806,461.191 408.873,461.191 		"/>
+		<g>
+			<polygon points="436.325,385.906 436.324,398.056 430.252,391.981 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 424.5222 429.2144)" fill="#010101" font-family="'ArialMT'" font-size="9">&lt;&lt;include&gt;&gt;</text>
+</svg>

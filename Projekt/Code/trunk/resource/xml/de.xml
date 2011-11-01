@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XLIFF Document. See http://docs.oasis-open.org/xliff/xliff-core/xliff-core.html -->
+<!-- Contains the english translation for the application -->
+<!-- @version $Id: de.xml 259 2011-01-19 18:23:13Z mtack001 $ -->
+<xliff version="1.2"
+	xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-strict.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="void" source-language="de" target-language="de"
+		datatype="plaintext">
+		<body>
+			<group id="menu">
+				<trans-unit id="menu-new">
+					<source>Neu</source>
+					<target>Neu</target>
+				</trans-unit>
+				<trans-unit id="menu-load">
+					<source>Laden</source>
+					<target>Laden</target>
+				</trans-unit>
+				<trans-unit id="menu-save">
+					<source>Speichern</source>
+					<target>Speichern</target>
+				</trans-unit>
+				<trans-unit id="menu-start">
+					<source>Starten</source>
+					<target>Starten</target>
+				</trans-unit>
+				<trans-unit id="menu-stop">
+					<source>Stoppen</source>
+					<target>Stoppen</target>
+				</trans-unit>
+				<trans-unit id="menu-help">
+					<source>Hilfe</source>
+					<target>Hilfe</target>
+				</trans-unit>
+				<trans-unit id="menu-simulation">
+					<source>Simulation</source>
+					<target>Simulation</target>
+				</trans-unit>
+				<trans-unit id="menu-simnext">
+					<source>Einen Schritt weiter</source>
+					<target>Einen Schritt weiter</target>
+				</trans-unit>
+				<trans-unit id="menu-simdebug-on">
+					<source>Debug-Layer anzeigen</source>
+					<target>Debug-Layer anzeigen</target>
+				</trans-unit>
+				<trans-unit id="menu-simdebug-off">
+					<source>Debug-Layer ausblenden</source>
+					<target>Debug-Layer ausblenden</target>
+				</trans-unit>
+				<trans-unit id="menu-file">
+					<source>Datei</source>
+					<target>Datei</target>
+				</trans-unit>
+				<trans-unit id="menu-quit">
+					<source>Beenden</source>
+					<target>Beenden</target>
+				</trans-unit>
+				<trans-unit id="menu-faq">
+					<source>FAQ</source>
+					<target>FAQ</target>
+				</trans-unit>
+				<trans-unit id="menu-about">
+					<source>Über</source>
+					<target>Über</target>
+				</trans-unit>
+			</group>
+			<group id="dialogue-help">
+				<trans-unit id="dialogue-help-title">
+					<source>Hilfe</source>
+					<target>Hilfe</target>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+</xliff>

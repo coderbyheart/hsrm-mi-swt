@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Contains the world definition (AKA savegame) -->
+<!-- @version $Id: world.xml 80 2010-12-18 17:14:40Z mtack001 $ -->
+<world xsi:noNamespaceSchemaLocation="world.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<tiles>
+		<basetile>
+			<source file="basetile.svg" mime="image/svg+xml"/>
+		</basetile>
+		<trafficlight>
+			<off-source file="kreuzung-ampel.svg" mime="image/svg+xml"/>
+			<red-source file="kreuzung-ampel.svg" mime="image/svg+xml"/>
+			<redyellow-source file="kreuzung-ampel.svg" mime="image/svg+xml"/>
+			<green-source file="kreuzung-ampel.svg" mime="image/svg+xml"/>
+			<yellow-source file="kreuzung-ampel.svg" mime="image/svg+xml"/>
+		</trafficlight>
+		<tiles>
+			<tile id="gerade">
+				<name>Gerade</name>
+				<description>Eine Gerade</description>
+				<source file="gerade.svg" mime="image/svg+xml"/>
+				<straight>
+					<start location="N"/>
+					<end location="S"/>
+				</straight>
+			</tile>
+			<tile id="kreuzung">
+				<name>Kreuzung</name>
+				<description>Eine Kreuzung, optional mit Ampeln</description>
+				<source file="kreuzung.svg" mime="image/svg+xml"/>
+				<straight>
+					<start location="N"/>
+					<end location="C" trafficlight="true"/>
+				</straight>
+				<straight>
+					<start location="S"/>
+					<end location="C" trafficlight="true"/>
+				</straight>
+				<straight>
+					<start location="W"/>
+					<end location="C" trafficlight="true"/>
+				</straight>
+				<straight>
+					<start location="E"/>
+					<end location="C" trafficlight="true"/>
+				</straight>
+			</tile>
+			<tile id="t-kreuzung">
+				<name>T-Kreuzung</name>
+				<description>Eine T-Kreuzung, optional mit Ampeln</description>
+				<source file="t-kreuzung.svg" mime="image/svg+xml"/>
+				<straight>
+					<start location="W"/>
+					<end location="C" trafficlight="true"/>
+				</straight>
+				<straight>
+					<start location="E"/>
+					<end location="C" trafficlight="true"/>
+				</straight>
+				<straight>
+					<start location="S"/>
+					<end location="C" trafficlight="true"/>
+				</straight>
+			</tile>
+			<tile id="kurve">
+				<name>Kurve</name>
+				<description>Eine Kurve</description>
+				<source file="kurve.svg" mime="image/svg+xml"/>
+				<curve>
+					<start location="W"/>
+					<end location="S"/>
+					<corner location="SW"/>
+				</curve>
+			</tile>
+			<tile id="doppelkurve">
+				<name>Doppel-Kurve</name>
+				<description>Eine Doppel-Kurve</description>
+				<source file="doppelkurve.svg" mime="image/svg+xml"/>
+				<curve>
+					<start location="W"/>
+					<end location="S"/>
+					<corner location="SW"/>
+				</curve>
+				<curve>
+					<start location="N"/>
+					<end location="E"/>
+					<corner location="NE"/>
+				</curve>
+			</tile>
+		</tiles>
+		<vehicles>
+			<speeds>
+				<speed id="slow" seconds="3"/>
+				<speed id="medium" seconds="2"/>
+				<speed id="fast" seconds="1"/>
+			</speeds>
+			<vehicle speed="medium" id="auto">
+				<name>Auto</name>
+				<description>Das Auto fährt mittelschnell.</description>
+				<source file="auto.svg" mime="image/svg+xml"/>
+			</vehicle>
+			<vehicle speed="slow" id="lkw">
+				<name>LKW</name>
+				<description>Der LKW fährt langsam.</description>
+				<source file="lkw.svg" mime="image/svg+xml"/>
+			</vehicle>
+			<vehicle speed="fast" id="moped">
+				<name>Moped</name>
+				<description>Das Moped fährt schnell.</description>
+				<source file="moped.svg" mime="image/svg+xml"/>
+			</vehicle>
+		</vehicles>
+	</tiles>
+	<board width="10" height="8">
+		<field tile="gerade" left="0" top="2" rotation="90"/>
+		<field tile="gerade" left="1" top="2" rotation="90"/>
+		<field tile="kreuzung" left="2" top="2" rotation="0"/>
+		<field tile="gerade" left="3" top="2" rotation="90"/>
+		<field tile="gerade" left="4" top="2" rotation="90"/>
+		<field tile="kurve" left="5" top="2" rotation="0">
+			<vehicle vehicle="auto" left="78" top="63" rotation="37"/>
+		</field>
+		<field tile="kurve" left="5" top="3" rotation="90"/>
+		<field tile="gerade" left="4" top="3" rotation="90">
+			<vehicle vehicle="auto" left="25" top="50" rotation="180"/>
+			<vehicle vehicle="auto" left="75" top="50" rotation="90"/>
+		</field>
+	</board>
+</world>

@@ -1,0 +1,13 @@
+Diese Projekte verwendet die folgende Software:
+
+* Log4j 1.2
+  Homepage:		http://logging.apache.org/log4j/
+  Lizenz:		Apache License 2.0
+  				http://logging.apache.org/log4j/1.2/license.html
+  				
+* Batik 1.7
+  Homepage:		http://xmlgraphics.apache.org/batik/
+  Lizenz:		Apache License 2.0
+  				http://xmlgraphics.apache.org/batik/license.html
+
+EOF: $Id: README.Externals 202 2011-01-14 07:29:01Z mtack001 $

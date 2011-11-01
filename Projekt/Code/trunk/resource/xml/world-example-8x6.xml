@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Contains the world definition (AKA savegame) -->
+<!-- @version $Id: world-example-8x6.xml 250 2011-01-19 08:15:42Z mtack001 $ -->
+<world xsi:noNamespaceSchemaLocation="world.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<worldtiles>
+		<basetile>
+			<source file="Basiskachel.svg" mime="image/svg+xml" />
+		</basetile>
+		<trafficlight>
+			<off-source file="Ampel-aus.svg" mime="image/svg+xml" />
+			<red-source file="Ampel-rot.svg" mime="image/svg+xml" />
+			<redyellow-source file="Ampel-rotgelb.svg" mime="image/svg+xml" />
+			<green-source file="Ampel-gruen.svg" mime="image/svg+xml" />
+			<yellow-source file="Ampel-gelb.svg" mime="image/svg+xml" />
+		</trafficlight>
+		<tiles>
+			<tile id="gerade">
+				<name>Gerade</name>
+				<description>Eine Gerade</description>
+				<source file="Gerade.svg" mime="image/svg+xml" />
+				<straight>
+					<start location="N" />
+					<end location="S" />
+				</straight>
+			</tile>
+			<tile id="kreuzung">
+				<name>Kreuzung</name>
+				<description>Eine Kreuzung, optional mit Ampeln</description>
+				<source file="Kreuzung.svg" mime="image/svg+xml" />
+				<straight>
+					<start location="N" />
+					<end location="C" trafficlight="true" />
+				</straight>
+				<straight>
+					<start location="S" />
+					<end location="C" trafficlight="true" />
+				</straight>
+				<straight>
+					<start location="W" />
+					<end location="C" trafficlight="true" />
+				</straight>
+				<straight>
+					<start location="E" />
+					<end location="C" trafficlight="true" />
+				</straight>
+			</tile>
+			<tile id="t-kreuzung">
+				<name>T-Kreuzung</name>
+				<description>Eine T-Kreuzung, optional mit Ampeln</description>
+				<source file="Abzweig.svg" mime="image/svg+xml" />
+				<straight>
+					<start location="W" />
+					<end location="C" trafficlight="true" />
+				</straight>
+				<straight>
+					<start location="E" />
+					<end location="C" trafficlight="true" />
+				</straight>
+				<straight>
+					<start location="S" />
+					<end location="C" trafficlight="true" />
+				</straight>
+			</tile>
+			<tile id="kurve">
+				<name>Kurve</name>
+				<description>Eine Kurve</description>
+				<source file="Kurve.svg" mime="image/svg+xml" />
+				<curve>
+					<start location="W" />
+					<end location="S" />
+					<corner location="SW" />
+				</curve>
+			</tile>
+			<tile id="doppelkurve">
+				<name>Doppel-Kurve</name>
+				<description>Eine Doppel-Kurve</description>
+				<source file="Doppelkurve.svg" mime="image/svg+xml" />
+				<curve>
+					<start location="W" />
+					<end location="S" />
+					<corner location="SW" />
+				</curve>
+				<curve>
+					<start location="N" />
+					<end location="E" />
+					<corner location="NE" />
+				</curve>
+			</tile>
+		</tiles>
+		<vehicles>
+			<vehicle speed="2.5" id="auto">
+				<name>Auto</name>
+				<description>Das Auto fährt mittelschnell.</description>
+				<source file="Auto.svg" mime="image/svg+xml" />
+			</vehicle>
+			<vehicle speed="3" id="lkw">
+				<name>LKW</name>
+				<description>Der LKW fährt langsam.</description>
+				<source file="LKW.svg" mime="image/svg+xml" />
+			</vehicle>
+			<vehicle speed="2" id="moped">
+				<name>Moped</name>
+				<description>Das Moped fährt schnell.</description>
+				<source file="Moped.svg" mime="image/svg+xml" />
+			</vehicle>
+		</vehicles>
+	</worldtiles>
+	<board height="6" width="8">
+		<field tile="kurve" top="0" left="2" rotation="270" />
+		<field tile="gerade" top="0" left="3" rotation="90" />
+		<field tile="gerade" top="0" left="4" rotation="90" />
+		<field tile="kurve" top="0" left="5" rotation="0" />
+		<field tile="kurve" top="1" left="1" rotation="270" />
+		<field tile="t-kreuzung" top="1" left="2" rotation="180" />
+		<field tile="kurve" top="1" left="3" rotation="0" />
+		<field tile="gerade" top="1" left="5" rotation="0" />
+		<field tile="gerade" top="2" left="1" rotation="0" />
+		<field tile="gerade" top="2" left="3" rotation="0" />
+		<field tile="gerade" top="2" left="5" rotation="0">
+			<vehicle vehicle="auto" left="50" top="25" rotation="0" />
+		</field>
+		<field tile="kurve" top="2" left="6" rotation="270" />
+		<field tile="kurve" top="2" left="7" rotation="0" />
+		<field tile="gerade" top="3" left="1" rotation="0" />
+		<field tile="t-kreuzung" top="3" left="3" rotation="270" />
+		<field tile="gerade" top="3" left="4" rotation="90" />
+		<field tile="doppelkurve" top="3" left="5" rotation="0" />
+		<field tile="kurve" top="3" left="6" rotation="90" />
+		<field tile="gerade" top="3" left="7" rotation="0" />
+		<field tile="kurve" top="4" left="0" rotation="270" />
+		<field tile="kreuzung" top="4" left="1" rotation="0" />
+		<field tile="gerade" top="4" left="2" rotation="90">
+			<vehicle vehicle="auto" left="75" top="50" rotation="270" />
+		</field>
+		<field tile="kreuzung" top="4" left="3" rotation="0">
+			<vehicle vehicle="auto" left="50" top="25" rotation="0" />
+			<vehicle vehicle="lkw" left="75" top="50" rotation="90" />
+			<vehicle vehicle="moped" left="50" top="75" rotation="180" />
+			<vehicle vehicle="auto" left="25" top="50" rotation="270" />
+		</field>
+		<field tile="gerade" top="4" left="4" rotation="90" />
+		<field tile="t-kreuzung" top="4" left="5" rotation="180" />
+		<field tile="t-kreuzung" top="4" left="6" rotation="0" />
+		<field tile="kurve" top="4" left="7" rotation="90" />
+		<field tile="kurve" top="5" left="0" rotation="180" />
+		<field tile="kurve" top="5" left="1" rotation="90" />
+		<field tile="kurve" top="5" left="3" rotation="180" />
+		<field tile="gerade" top="5" left="4" rotation="90" />
+		<field tile="gerade" top="5" left="5" rotation="90" />
+		<field tile="kurve" top="5" left="6" rotation="90" />
+	</board>
+</world>

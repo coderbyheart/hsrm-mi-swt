@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XLIFF Document. See http://docs.oasis-open.org/xliff/xliff-core/xliff-core.html -->
+<!-- Contains the english translation for the application -->
+<!-- @version $Id: en.xml 40 2010-12-06 15:53:14Z mtack001 $ -->
+<xliff version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-strict.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="void" source-language="de" target-language="en" datatype="plaintext">
+		<body>
+			<group id="menu">
+				<trans-unit id="menu-help">
+					<source>Hilfe</source>
+					<target>Help</target>
+				</trans-unit>
+			</group>
+			<group id="dialogue-help">
+				<trans-unit id="dialogue-help-title">
+					<source>Hilfe</source>
+					<target>Help</target>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<world xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="world.xsd">
+  <worldtiles>
+    <basetile>
+      <source file="Basiskachel.svg" mime="image/svg+xml"/>
+    </basetile>
+    <trafficlight>
+      <off-source file="Ampel-aus.svg" mime="image/svg+xml"/>
+      <red-source file="Ampel-rot.svg" mime="image/svg+xml"/>
+      <redyellow-source file="Ampel-rotgelb.svg" mime="image/svg+xml"/>
+      <green-source file="Ampel-gruen.svg" mime="image/svg+xml"/>
+      <yellow-source file="Ampel-gelb.svg" mime="image/svg+xml"/>
+    </trafficlight>
+    <tiles>
+      <tile id="gerade">
+        <name>Gerade</name>
+        <description>Eine Gerade</description>
+        <source file="Gerade.svg" mime="image/svg+xml"/>
+        <straight>
+          <start location="N"/>
+          <end location="S" trafficlight="false"/>
+        </straight>
+      </tile>
+      <tile id="kreuzung">
+        <name>Kreuzung</name>
+        <description>Eine Kreuzung, optional mit Ampeln</description>
+        <source file="Kreuzung.svg" mime="image/svg+xml"/>
+        <straight>
+          <start location="N"/>
+          <end location="C" trafficlight="true"/>
+        </straight>
+        <straight>
+          <start location="S"/>
+          <end location="C" trafficlight="true"/>
+        </straight>
+        <straight>
+          <start location="W"/>
+          <end location="C" trafficlight="true"/>
+        </straight>
+        <straight>
+          <start location="E"/>
+          <end location="C" trafficlight="true"/>
+        </straight>
+      </tile>
+      <tile id="t-kreuzung">
+        <name>T-Kreuzung</name>
+        <description>Eine T-Kreuzung, optional mit Ampeln</description>
+        <source file="Abzweig.svg" mime="image/svg+xml"/>
+        <straight>
+          <start location="W"/>
+          <end location="C" trafficlight="true"/>
+        </straight>
+        <straight>
+          <start location="E"/>
+          <end location="C" trafficlight="true"/>
+        </straight>
+        <straight>
+          <start location="S"/>
+          <end location="C" trafficlight="true"/>
+        </straight>
+      </tile>
+      <tile id="kurve">
+        <name>Kurve</name>
+        <description>Eine Kurve</description>
+        <source file="Kurve.svg" mime="image/svg+xml"/>
+        <curve>
+          <start location="W"/>
+          <end location="S"/>
+          <corner location="SW"/>
+        </curve>
+      </tile>
+      <tile id="doppelkurve">
+        <name>Doppel-Kurve</name>
+        <description>Eine Doppel-Kurve</description>
+        <source file="Doppelkurve.svg" mime="image/svg+xml"/>
+        <curve>
+          <start location="W"/>
+          <end location="S"/>
+          <corner location="SW"/>
+        </curve>
+        <curve>
+          <start location="N"/>
+          <end location="E"/>
+          <corner location="NE"/>
+        </curve>
+      </tile>
+    </tiles>
+    <vehicles>
+      <vehicle id="auto" speed="2.0">
+        <name>Auto</name>
+        <description>Das Auto fährt mittelschnell.</description>
+        <source file="Auto.svg" mime="image/svg+xml"/>
+      </vehicle>
+      <vehicle id="lkw" speed="1.0">
+        <name>LKW</name>
+        <description>Der LKW fährt langsam.</description>
+        <source file="LKW.svg" mime="image/svg+xml"/>
+      </vehicle>
+      <vehicle id="moped" speed="3.0">
+        <name>Moped</name>
+        <description>Das Moped fährt schnell.</description>
+        <source file="Moped.svg" mime="image/svg+xml"/>
+      </vehicle>
+    </vehicles>
+  </worldtiles>
+  <board height="6" width="8">
+    <field left="2" rotation="270" tile="kurve" top="0"/>
+    <field left="3" rotation="90" tile="gerade" top="0"/>
+    <field left="4" rotation="90" tile="gerade" top="0"/>
+    <field left="5" rotation="0" tile="kurve" top="0"/>
+    <field left="1" rotation="270" tile="kurve" top="1"/>
+    <field left="2" rotation="180" tile="t-kreuzung" top="1"/>
+    <field left="3" rotation="0" tile="kurve" top="1"/>
+    <field left="5" rotation="0" tile="gerade" top="1"/>
+    <field left="1" rotation="0" tile="gerade" top="2"/>
+    <field left="3" rotation="0" tile="gerade" top="2"/>
+    <field left="5" rotation="0" tile="gerade" top="2">
+      <vehicle left="50" rotation="0" top="44" vehicle="auto"/>
+    </field>
+    <field left="6" rotation="270" tile="kurve" top="2"/>
+    <field left="7" rotation="0" tile="kurve" top="2"/>
+    <field left="1" rotation="0" tile="gerade" top="3"/>
+    <field left="3" rotation="270" tile="t-kreuzung" top="3"/>
+    <field left="4" rotation="90" tile="gerade" top="3"/>
+    <field left="5" rotation="0" tile="doppelkurve" top="3"/>
+    <field left="6" rotation="90" tile="kurve" top="3"/>
+    <field left="7" rotation="0" tile="gerade" top="3"/>
+    <field left="0" rotation="270" tile="kurve" top="4"/>
+    <field left="1" rotation="0" tile="kreuzung" top="4"/>
+    <field left="2" rotation="90" tile="gerade" top="4">
+      <vehicle left="94" rotation="270" top="50" vehicle="auto"/>
+    </field>
+    <field left="3" rotation="0" tile="kreuzung" top="4">
+      <vehicle left="50" rotation="0" top="44" vehicle="auto"/>
+      <vehicle left="37" rotation="90" top="50" vehicle="lkw"/>
+      <vehicle left="54" rotation="151" top="21" vehicle="moped"/>
+      <vehicle left="44" rotation="270" top="50" vehicle="auto"/>
+    </field>
+    <field left="4" rotation="90" tile="gerade" top="4"/>
+    <field left="5" rotation="180" tile="t-kreuzung" top="4"/>
+    <field left="6" rotation="0" tile="t-kreuzung" top="4"/>
+    <field left="7" rotation="90" tile="kurve" top="4"/>
+    <field left="0" rotation="180" tile="kurve" top="5"/>
+    <field left="1" rotation="90" tile="kurve" top="5"/>
+    <field left="3" rotation="180" tile="kurve" top="5"/>
+    <field left="4" rotation="90" tile="gerade" top="5"/>
+    <field left="5" rotation="90" tile="gerade" top="5"/>
+    <field left="6" rotation="90" tile="kurve" top="5"/>
+  </board>
+</world>

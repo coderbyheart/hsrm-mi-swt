@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XSD for the the world definitions -->
+<!-- @version $Id: world.xsd 202 2011-01-14 07:29:01Z mtack001 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="tiles.xsd"/>
+	<xs:element name="world">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="worldtiles" type="worldtiles">
+					<xs:annotation>
+						<xs:documentation>Enthält an dieser Stelle die komplette tiles.xml der Anwendung, um die Savegames austauschbar zu machen.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="board" type="board"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="board">
+		<xs:annotation>
+			<xs:documentation>Definiert die größe der zweidimensionalen Welt-Matrix. Enthält die platzierten Straßenkacheln.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="field" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Repräsentiert eine platzierte Straßenkachel.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="vehicle" maxOccurs="unbounded" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Repräsentiert eine platziertes Fahrzeug.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:attribute name="vehicle" type="xs:IDREF" use="required">
+									<xs:annotation>
+										<xs:documentation>ID der verwendeten Fahrzeugkachel.</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+								<xs:attribute name="left" use="required" type="percent">
+									<xs:annotation>
+										<xs:documentation>Position auf der Kachel in Prozent der Kachelbreite, relativ zur linken Kachelkante.</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+								<xs:attribute name="top" use="required" type="percent">
+									<xs:annotation>
+										<xs:documentation>Position auf der Kachel in Prozent der Kachelbreite, relativ zur oberen Kachelkante.</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+								<xs:attribute name="rotation" use="required" type="rotation">
+									<xs:annotation>
+										<xs:documentation>Rotation des Fahrzeuges, im Uhrzeigersinn in Grad.</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="tile" type="xs:IDREF" use="required">
+						<xs:annotation>
+							<xs:documentation>ID der verwendeten Straßenkachel.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="left" use="required" type="xs:nonNegativeInteger">
+						<xs:annotation>
+							<xs:documentation>Positions-Index in der Welt-Matrix von Links, beginnend bei 0.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="top" use="required" type="xs:nonNegativeInteger">
+						<xs:annotation>
+							<xs:documentation>Positions-Index in der Welt-Matrix von Oben, beginnend bei 0.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="rotation" use="required" type="tilerotation">
+						<xs:annotation>
+							<xs:documentation>Rotation der Kachel, im Uhrzeigersinn in Grad.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="trafficlight" type="xs:boolean">
+						<xs:annotation>
+							<xs:documentation>Ob die Kachel in der Ampel-Version verwendet wird.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="width" use="required" type="xs:positiveInteger">
+			<xs:annotation>
+				<xs:documentation>Anzahl der Kacheln in der Horizontalen.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="height" use="required" type="xs:positiveInteger">
+			<xs:annotation>
+				<xs:documentation>Anzahl der Kacheln in der Vertikalen.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:simpleType name="rotation">
+		<xs:restriction base="xs:nonNegativeInteger">
+			<xs:maxExclusive value="360"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tilerotation">
+		<xs:restriction base="rotation">
+			<xs:pattern value="0|90|180|270"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="percent">
+		<xs:restriction base="xs:nonNegativeInteger">
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

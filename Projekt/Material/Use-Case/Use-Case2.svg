@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.279px" height="841.89px" viewBox="0 0 595.279 841.89" enable-background="new 0 0 595.279 841.89"
+	 xml:space="preserve">
+<g>
+	<g>
+		<circle fill="#FFFFFF" stroke="#010101" stroke-width="2" stroke-miterlimit="10" cx="111.176" cy="241.11" r="21.193"/>
+		<line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="111" y1="262" x2="111" y2="355"/>
+		<line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="82" y1="288" x2="141" y2="288"/>
+		
+			<line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="111.287" y1="355.329" x2="82.243" y2="384.373"/>
+		
+			<line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="111.287" y1="355.329" x2="138.749" y2="382.79"/>
+	</g>
+	<rect x="64.354" y="410.958" fill="none" width="93.75" height="19.793"/>
+	<text transform="matrix(1 0 0 1 81.7761 425.2769)" fill="#010101" font-family="'ArialMT'" font-size="20">Nutzer</text>
+</g>
+<g>
+	<rect x="261.005" y="100.998" fill="none" width="101.247" height="30"/>
+	<text transform="matrix(1 0 0 1 290.2249 111.021)" fill="#010101" font-family="'ArialMT'" font-size="14">Kachel </text>
+	<text transform="matrix(1 0 0 1 281.2771 127.8198)" fill="#010101" font-family="'ArialMT'" font-size="14">platzieren</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="312.252" cy="117.998" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="427.629" y="102.998" fill="none" width="101.244" height="30"/>
+	<text transform="matrix(1 0 0 1 456.8464 113.021)" fill="#010101" font-family="'ArialMT'" font-size="14">Kachel</text>
+	<text transform="matrix(1 0 0 1 454.1228 129.8198)" fill="#010101" font-family="'ArialMT'" font-size="14">löschen</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="478.873" cy="117.998" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="425.129" y="268.07" fill="none" width="125.997" height="28.875"/>
+	<text transform="matrix(1 0 0 1 456.2205 278.0933)" fill="#010101" font-family="'ArialMT'" font-size="14">Objekt auf </text>
+	<text transform="matrix(1 0 0 1 434.4275 294.894)" fill="#010101" font-family="'ArialMT'" font-size="14">Kachel platzieren</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="488.873" cy="283.258" rx="62.5" ry="37.5"/>
+</g>
+<g>
+	<rect x="367.629" y="182.19" fill="none" width="101.244" height="30"/>
+	<text transform="matrix(1 0 0 1 398.4089 192.2144)" fill="#010101" font-family="'ArialMT'" font-size="14">Ampel </text>
+	<text transform="matrix(1 0 0 1 387.9001 209.0142)" fill="#010101" font-family="'ArialMT'" font-size="14">platzieren</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="418.873" cy="197.19" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="293.337" y="425.751" fill="none" width="101.245" height="30"/>
+	<text transform="matrix(1 0 0 1 328.7908 435.7749)" fill="#010101" font-family="'ArialMT'" font-size="14">LKW</text>
+	<text transform="matrix(1 0 0 1 313.6082 452.5757)" fill="#010101" font-family="'ArialMT'" font-size="14">platzieren</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="344.582" cy="440.751" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="236.75" y="28.467" fill="none" width="240.001" height="17.5"/>
+	<text transform="matrix(1 0 0 1 236.7502 38.4888)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Verkehrsplaner </text>
+	<text transform="matrix(1 0 0 1 342.5837 38.4888)" fill="#010101" font-family="'ArialMT'" font-size="14">- Interaktion</text>
+</g>
+<g>
+	<rect x="241.958" y="278.758" fill="none" width="101.245" height="30"/>
+	<text transform="matrix(1 0 0 1 264.571 288.7808)" fill="#010101" font-family="'ArialMT'" font-size="14">Motorrad</text>
+	<text transform="matrix(1 0 0 1 262.2297 305.5815)" fill="#010101" font-family="'ArialMT'" font-size="14">platzieren</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="293.203" cy="293.758" rx="50" ry="30"/>
+</g>
+<g>
+	<rect x="248.602" y="353.082" fill="none" width="101.245" height="30"/>
+	<text transform="matrix(1 0 0 1 284.825 363.105)" fill="#010101" font-family="'ArialMT'" font-size="14">Auto</text>
+	<text transform="matrix(1 0 0 1 268.8728 379.9058)" fill="#010101" font-family="'ArialMT'" font-size="14">platzieren</text>
+	<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="299.847" cy="368.082" rx="50" ry="30"/>
+</g>
+<rect x="260.628" y="498.191" fill="none" width="101.245" height="30"/>
+<text transform="matrix(1 0 0 1 277.7859 508.2144)" font-family="'ArialMT'" font-size="14">Fahrzeug </text>
+<text transform="matrix(1 0 0 1 283.3376 525.0142)" font-family="'ArialMT'" font-size="14">löschen</text>
+<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="311.873" cy="513.191" rx="50" ry="30"/>
+<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="141" y1="288" x2="262.251" y2="117.998"/>
+<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="156.288" y1="282.191" x2="428.873" y2="117.998"/>
+<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="368.873" y1="197.19" x2="141" y2="288"/>
+<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="277.785" y1="491.25" x2="141" y2="288"/>
+<rect x="227.499" y="19.02" fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" width="333.502" height="551.425"/>
+<path d="M456.914,76.774"/>
+<rect x="427.629" y="369.373" fill="none" width="101.244" height="30"/>
+<text transform="matrix(1 0 0 1 449.0818 379.396)" fill="#010101" font-family="'ArialMT'" font-size="14">Fahrzeug</text>
+<text transform="matrix(1 0 0 1 447.8992 396.1968)" fill="#010101" font-family="'ArialMT'" font-size="14">platzieren</text>
+<ellipse fill="none" stroke="#010101" stroke-miterlimit="10" cx="478.873" cy="384.373" rx="50" ry="30"/>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="391.734" y1="430.751" x2="430.26" y2="410.105"/>
+		<g>
+			<polygon points="432.107,418.959 441.306,404.131 423.865,403.578 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="349.847" y1="368.082" x2="417.129" y2="377.631"/>
+		<g>
+			<polygon points="413.382,385.863 429.569,379.349 415.833,368.585 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="343.203" y1="293.758" x2="433.281" y2="355.968"/>
+		<g>
+			<polygon points="426.249,361.657 443.642,363.065 436.166,347.298 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="505.341" y1="358.924" x2="507.194" y2="331.484"/>
+		<g>
+			<polygon points="515.679,334.616 507.992,318.951 498.268,333.44 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="1.25" stroke-miterlimit="10" x1="468.873" y1="202.999" x2="476.219" y2="234.403"/>
+		<g>
+			<polygon points="467.832,233.929 478.916,245.748 483.611,230.239 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="1.25" stroke-miterlimit="10" x1="429.246" y1="410.218" x2="430.755" y2="409.411"/>
+		<g>
+			<polygon fill="#FFFFFF" points="432.073,415.734 438.644,405.143 426.186,404.748 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon fill="#FFFFFF" points="415.337,384.015 426.899,379.362 417.088,371.674 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="1.25" stroke-miterlimit="10" x1="507.022" y1="332.329" x2="507.118" y2="330.904"/>
+		<g>
+			<polygon fill="#FFFFFF" points="513.178,333.142 507.689,321.952 500.742,332.301 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon fill="#FFFFFF" points="469.713,234.659 478.239,243.75 481.85,231.82 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon fill="#FFFFFF" points="428.666,360.024 441.09,361.031 435.749,349.768 		"/>
+	</g>
+</g>
+</svg>

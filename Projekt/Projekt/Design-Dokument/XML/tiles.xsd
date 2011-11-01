@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XSD for the the tile definitions -->
+<!-- @version $Id: tiles.xsd 80 2010-12-18 17:14:40Z mtack001 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="tiles" type="tiles"/>
+	<xs:complexType name="tiles">
+		<xs:sequence>
+			<xs:element name="basetile">
+				<xs:annotation>
+					<xs:documentation>Jede Welt muss eine Basiskachel haben.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="source" type="source"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="trafficlight">
+				<xs:annotation>
+					<xs:documentation>Definiert die verschiedenen Zustände der Ampeln</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="off-source" type="source">
+							<xs:annotation><xs:documentation>Ampel ist aus</xs:documentation></xs:annotation>
+						</xs:element>
+						<xs:element name="red-source" type="source">
+							<xs:annotation><xs:documentation>Ampel zeigt rot</xs:documentation></xs:annotation>
+						</xs:element>
+						<xs:element name="redyellow-source" type="source">
+							<xs:annotation><xs:documentation>Ampel zeigt rot-gelb</xs:documentation></xs:annotation>
+						</xs:element>
+						<xs:element name="green-source" type="source">
+							<xs:annotation><xs:documentation>Ampel zeigt grün</xs:documentation></xs:annotation>
+						</xs:element>
+						<xs:element name="yellow-source" type="source">
+							<xs:annotation><xs:documentation>Ampel zeigt gelb</xs:documentation></xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="tiles">
+				<xs:annotation>
+					<xs:documentation>Enthält die Liste mit verfügbaren Kacheln (mindestens eine).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="tile" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Definiert eine Kachel.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="name" type="nonEmptyString">
+										<xs:annotation>
+											<xs:documentation>Name der Kachel.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="description" type="xs:string" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Beschreibung der Kachel, optional.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="source" type="source"/>
+									<xs:element name="straight" minOccurs="0" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>Definiert eine Gerade. Jede Gerade hat einen Anfangs- und Endpunkt. Zu jedem Punkt kann angegeben werden, ob dort eine Ampel zu finden ist. Die Ampel gilt dann immer in Fahrtrichtung (von start nach end).</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="start" type="route-point"/>
+												<xs:element name="end" type="route-point"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="curve" minOccurs="0" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>Definiert eine Kurve. Jede Kurve hat einen Anfangs- und Endpunkt, sowie einen Eckpunkt, dieser bildet das Zentrum für einen Kreis, der durch den Start und den Endpunkt geht.</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="start" type="curve-point"/>
+												<xs:element name="end" type="curve-point"/>
+												<xs:element name="corner" type="curve-point"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+								<xs:attribute name="id" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="vehicles">
+				<xs:annotation>
+					<xs:documentation>Definiert die zur Verfügung stehenden Fahrzeuge und ihre Geschwindigkeiten.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="speeds">
+							<xs:annotation>
+								<xs:documentation>Definiert die Geschwindigkeiten der Fahrzeuge.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="speed" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:attribute name="id" type="xs:ID" use="required"/>
+											<xs:attribute name="seconds" type="seconds" use="required"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="vehicle" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Definiert die zur Verfügung stehenden Fahrzeuge.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="name" type="nonEmptyString">
+										<xs:annotation>
+											<xs:documentation>Name des Fahrzeuges.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="description" type="xs:string" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Beschreibung des Fahrzeuges.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="source" type="source"/>
+								</xs:sequence>
+								<xs:attribute name="speed" type="xs:IDREF" use="required"/>
+								<xs:attribute name="id" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="source">
+		<xs:annotation>
+			<xs:documentation>Quellen-Angabe mit Verweis auf Datei und Angabe zum Mime-Type der Datei.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="file" type="nonEmptyString" use="required"/>
+		<xs:attribute name="mime" type="nonEmptyString" use="required"/>
+	</xs:complexType>
+	<xs:simpleType name="nonEmptyString">
+		<xs:annotation>
+			<xs:documentation>Ein nicht leerer-Text.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="seconds">
+		<xs:annotation>
+			<xs:documentation>Angabe von Sekunden, als floats, größer 0</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:float">
+			<xs:minExclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="route-point">
+		<xs:annotation>
+			<xs:documentation>Anfangs-, End-Punkt einer Strecke oder Kurve. Muss eine Positionsangabe (siehe bearing) haben und kann eine Ampel haben.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="location" type="bearing" use="required"/>
+		<xs:attribute name="trafficlight" type="xs:boolean" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="curve-point">
+		<xs:annotation>
+			<xs:documentation>Eck-Punkt einer Kurve. Muss eine Positionsangabe (siehe bearing) haben.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="location" type="bearing" use="required"/>
+	</xs:complexType>
+	<xs:simpleType name="bearing">
+		<xs:annotation>
+			<xs:documentation>Positions-Angabe für Strecken-Punkte. C = center, ansonsten werden die vier Himmelsrichtungen verwendet, sowie die jeweiligen Ecken dazwischen.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="C|N|NE|E|SE|S|SW|W|NW"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

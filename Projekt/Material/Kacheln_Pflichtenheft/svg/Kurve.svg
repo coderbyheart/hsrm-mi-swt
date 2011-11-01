@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
+<rect x="164.41" y="119.436" fill="#FFFFFF" stroke="#000000" width="241.025" height="241.025"/>
+<line fill="none" stroke="#000000" x1="283.923" y1="345.718" x2="283.923" y2="375.205"/>
+<line fill="none" stroke="#000000" x1="419.537" y1="239.821" x2="390.051" y2="239.821"/>
+<line fill="none" stroke="#000000" x1="179.153" y1="239.821" x2="149.667" y2="239.821"/>
+<g>
+	<line fill="none" stroke="#000000" x1="164.41" y1="63.667" x2="405.436" y2="63.667"/>
+	<line fill="none" stroke="#000000" x1="163.128" y1="50.077" x2="163.128" y2="79.564"/>
+	<line fill="none" stroke="#000000" x1="405.436" y1="49.949" x2="405.436" y2="79.436"/>
+</g>
+<rect x="265.308" y="44.897" fill="none" width="85.897" height="12.821"/>
+<text transform="matrix(1 0 0 1 265.3076 56.9673)" font-family="'MyriadPro-Regular'" font-size="17">100 %</text>
+<rect x="270.436" y="85.436" fill="none" width="37.82" height="12.82"/>
+<text transform="matrix(1 0 0 1 270.436 97.5054)" font-family="'MyriadPro-Regular'" font-size="17">50 %</text>
+<g>
+	<line fill="none" stroke="#000000" x1="460.282" y1="120.077" x2="460.282" y2="361.103"/>
+	<line fill="none" stroke="#000000" x1="473.872" y1="118.795" x2="444.385" y2="118.795"/>
+	<line fill="none" stroke="#000000" x1="474" y1="361.103" x2="444.513" y2="361.103"/>
+</g>
+<rect x="469.23" y="220.974" fill="none" width="12.821" height="85.898"/>
+<text transform="matrix(-4.371139e-08 1 -1 -4.371139e-08 469.9814 220.9741)" font-family="'MyriadPro-Regular'" font-size="17">100 %</text>
+<text transform="matrix(-1.346898e-10 1 -1 -1.346898e-10 428.5137 228.4102)" font-family="'MyriadPro-Regular'" font-size="17">50 %</text>
+<g id="layer1" transform="translate(0,-952.36218)" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+	
+		<path id="path3773" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="#FAF9F9" stroke="#FAF9F9" stroke-dasharray="8,4" d="
+		M285.026,1073.051v241.23"/>
+</g>
+<path id="rect2985-2_6_" fill="none" stroke="#343434" d="M250.213,274.154"/>
+<path id="rect2985-2_5_" fill="none" stroke="#343434" d="M250.213,202.323"/>
+<path id="rect2985-2_14_" fill="none" stroke="#343434" d="M248.549,360.419"/>
+<path id="rect2985-2_13_" fill="none" stroke="#343434" d="M320.379,359.419"/>
+<path id="rect2985-2_16_" fill="none" stroke="#343434" d="M321.295,120.189"/>
+<path id="rect2985-2_1_" fill="none" stroke="#343434" d="M249.465,120.189"/>
+<line fill="none" stroke="#000000" x1="284.923" y1="104.692" x2="284.923" y2="134.18"/>
+<g id="layer1_1_" transform="translate(0,-952.36218)" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+	<path id="path3773-0" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="#FAF9F9" stroke="#FAF9F9" d="
+		M286.099,1252.267v60.156"/>
+	<path id="path3892-4_3_" fill="none" stroke="#343434" d="M164.658,1228.204c46.949,0,85.009,37.706,85.009,84.219"/>
+	<path id="path3892-4_2_" fill="none" stroke="#343434" d="M322.531,1312.423c0-86.38-70.683-156.406-157.873-156.406"/>
+	<path id="path3970_2_" fill="none" stroke="#FFFFFF" stroke-dasharray="8,4" d="M164.658,1193.314L164.658,1193.314
+		L164.658,1193.314"/>
+	<path id="path3970_1_" fill="none" stroke="#FFFFFF" stroke-dasharray="8,4" d="M284.884,1312.423"/>
+</g>
+</svg>

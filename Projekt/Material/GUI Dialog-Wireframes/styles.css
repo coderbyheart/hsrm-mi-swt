@@ -1,0 +1,10 @@
+body { margin: 2em; }
+fieldset { border: 2px solid #000; padding: 1em; width: 31em; }
+legend { padding: 0.25em 0.5em; border: 2px solid #000; }
+.col { float: left; width: 15em; margin-right: 1em; }
+.cor { float: left; width: 15em; }
+select { width: 100%; }
+.right { text-align: right; }
+.center { text-align: center; }
+.twocol { float: left; clear: both; width: 100%; }
+button { width: 7em; margin-left: 1em; }

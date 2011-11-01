@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Contains the tile definitions -->
+<!-- @version $Id: tiles.xml 202 2011-01-14 07:29:01Z mtack001 $ -->
+<worldtiles xsi:noNamespaceSchemaLocation="tiles.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<basetile>
+		<source file="Basiskachel.svg" mime="image/svg+xml"/>
+	</basetile>
+	<trafficlight>
+		<off-source file="Ampel-aus.svg" mime="image/svg+xml"/>
+		<red-source file="Ampel-rot.svg" mime="image/svg+xml"/>
+		<redyellow-source file="Ampel-rotgelb.svg" mime="image/svg+xml"/>
+		<green-source file="Ampel-gruen.svg" mime="image/svg+xml"/>
+		<yellow-source file="Ampel-gelb.svg" mime="image/svg+xml"/>
+	</trafficlight>
+	<tiles>
+		<tile id="gerade">
+			<name>Gerade</name>
+			<description>Eine Gerade</description>
+			<source file="Gerade.svg" mime="image/svg+xml"/>
+			<straight>
+				<start location="N"/>
+				<end location="S"/>
+			</straight>
+		</tile>
+		<tile id="kreuzung">
+			<name>Kreuzung</name>
+			<description>Eine Kreuzung, optional mit Ampeln</description>
+			<source file="Kreuzung.svg" mime="image/svg+xml"/>
+			<straight>
+				<start location="N"/>
+				<end location="C" trafficlight="true"/>
+			</straight>
+			<straight>
+				<start location="S"/>
+				<end location="C" trafficlight="true"/>
+			</straight>
+			<straight>
+				<start location="W"/>
+				<end location="C" trafficlight="true"/>
+			</straight>
+			<straight>
+				<start location="E"/>
+				<end location="C" trafficlight="true"/>
+			</straight>
+		</tile>
+		<tile id="t-kreuzung">
+			<name>T-Kreuzung</name>
+			<description>Eine T-Kreuzung, optional mit Ampeln</description>
+			<source file="Abzweig.svg" mime="image/svg+xml"/>
+			<straight>
+				<start location="W"/>
+				<end location="C" trafficlight="true"/>
+			</straight>
+			<straight>
+				<start location="E"/>
+				<end location="C" trafficlight="true"/>
+			</straight>
+			<straight>
+				<start location="S"/>
+				<end location="C" trafficlight="true"/>
+			</straight>
+		</tile>
+		<tile id="kurve">
+			<name>Kurve</name>
+			<description>Eine Kurve</description>
+			<source file="Kurve.svg" mime="image/svg+xml"/>
+			<curve>
+				<start location="W"/>
+				<end location="S"/>
+				<corner location="SW"/>
+			</curve>
+		</tile>
+		<tile id="doppelkurve">
+			<name>Doppel-Kurve</name>
+			<description>Eine Doppel-Kurve</description>
+			<source file="Doppelkurve.svg" mime="image/svg+xml"/>
+			<curve>
+				<start location="W"/>
+				<end location="S"/>
+				<corner location="SW"/>
+			</curve>
+			<curve>
+				<start location="N"/>
+				<end location="E"/>
+				<corner location="NE"/>
+			</curve>
+		</tile>
+	</tiles>
+	<vehicles>
+		<vehicle speed="2.0" id="auto">
+			<name>Auto</name>
+			<description>Das Auto fährt mittelschnell.</description>
+			<source file="Auto.svg" mime="image/svg+xml"/>
+		</vehicle>
+		<vehicle speed="1.0" id="lkw">
+			<name>LKW</name>
+			<description>Der LKW fährt langsam.</description>
+			<source file="LKW.svg" mime="image/svg+xml"/>
+		</vehicle>
+		<vehicle speed="3.0" id="moped">
+			<name>Moped</name>
+			<description>Das Moped fährt schnell.</description>
+			<source file="Moped.svg" mime="image/svg+xml"/>
+		</vehicle>
+	</vehicles>
+</worldtiles>

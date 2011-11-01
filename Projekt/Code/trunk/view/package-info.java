@@ -1,0 +1,4 @@
+/**
+ * Die Views
+ */
+package view;
